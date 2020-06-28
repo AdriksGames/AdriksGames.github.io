@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<title>AdriksGames</title>
+		<meta charset="utf-8"/>
+		<meta name="Content-language" content="pl"/>
+		<meta name="author" content="Adriks"/>
+		<meta name="direction" content="Witam was wszystkich na mojej oficjalnej stronie internetowej. Na tej stronie mozesz zainstalowac gry stworzone przeze mnie oraz dowiedziec sie wiele ciekawych informacji o mnie :) Zapraszam równiez na mój kanal na Youtube Adriks (wiecej informacji na kanale), grupe na FB LudziskaAdriksa oraz oficjalnego Discorda!"/>
+		<meta name="keywords" content="www, strona, internetowa, Adriks, adriksgames.pl, adriksgames, gry adriksa, Adrian Łepek, LudziskaAdriksa, Star Wars Episode 1, Star Wars Episode 2, Troll 1, Troll 2, Six Nights at The WareHouse, OUTLAST 2D, Flappy Ball, gry 2D"/>
+		<meta name="generator" content="Notepad++"/>
+		<meta name="robots" content="index"/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="copyright" content="(c) 2020 Adriks"/>
+		<link rel="shortcut icon" href="icona.ico"/>
+		<link rel="stylesheet" href="style.css" type="text/css"/>
+	</head>
+	<body ondragstart="return false" ondrag="return false" onselect="return false" oncopy="return false">
+		<a href="index.html"><img src="Title.png" class="title" alt="Logo Strony"></a>
+		
+		<div id="main">
+			<div id="menu">
+				<div id="menu_gry"><a href="Gry.html" class="gry">Gry</a></div> <div id="menu_sm"><a href="sm.html" class="sm">Social Media</a></div> <div id="menu_i"><a href="informacje.html" class="info">Informacje</a></div>
+				
+			</div><br>
+		<div id="gry">
+			1. <span class="games-size"><a href="opis_swe1.html">Star Wars Episode 1</a></span><br>
+			2. <span class="games-size"><a href="opis_swe2.html">Star Wars Episode 2</a></span><br>
+			3. <span class="games-size"><a href="opis_t1.html">Troll 1</a></span><br>
+			4. <span class="games-size"><a href="opis_t2.html">Troll 2</a></span><br>
+			5. <span class="games-size"><a href="opis_snatwh.html">Six Nights at The WareHouse</a></span><br>
+			6. <span class="games-size"><a href="opis_ol2d.html">OUTLAST 2D</a></span><br>
+			7. <span class="games-size"><a href="opis_fb.html">Flappy Ball</a></span><br>
+			<span class="uwaga">UWAGA : Gry są całkowicie bezpłatne oraz nie posiadają żadnych wirusów!!</span></div>
+		</div>
+		
+		<script>
+		<!-- Blokada -->
+			window.addEventListener('keydown', function(event)
+			{
+				if (event.ctrlKey && event.keyCode === 85 || event.keyCode === 123) <!-- CTRL+U oraz F12 -->      
+				{
+					event.preventDefault();
+					
+				}
+			});
+			
+			window.addEventListener('contextmenu', function(event)
+			{
+				event.preventDefault();
+				
+			});
+		</script>
+		
+		<!-- BackGround Effect -->
+		<video autoplay muted loop id="background">
+			<source src="https://backgroundadriks.000webhostapp.com/backgroundvideo.mp4" type="video/mp4" />
+		</video><br>
+		
+		<div id="marquee"><marquee behavior="scroll" direction="right">🎼 <a href="https://www.youtube.com/watch?v=b8m9zhNAgKs" target="_blank">Rae Sremmurd - Black Beatles ft. Gucci Mane</a> 🎼</marquee></div>
+		
+		<!-- BgMusic -->
+		<audio id="myAudio" autoplay loop>
+			<source src="backgroundaudio.mp3" type="audio/mpeg" />
+		</audio>
+		
+		<!-- Script Play/Pause BgMusic -->
+		<script>
+			var audio = document.getElementById("myAudio");
+
+			function playAudio() 
+			{ 
+				audio.play(); 
+			}
+			function pauseAudio() 
+			{ 
+				audio.pause(); 
+			}
+		</script>
+		
+		<div id="footer">
+			<p><u>Adrian Łepek(Adriks) &copy; Wszelkie prawa zastrzeżone!!</u></p>
+		</div>
+	</body>
+</html>
