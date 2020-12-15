@@ -1,0 +1,220 @@
+@font-face {
+  font-family: "Consolas";
+  src: url("consola.eot");
+  src: url("consola.ttf") format("ttf");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: Consolas, sans-serif;
+  font-size: 1.5vw;
+  animation: fadein 3s;
+  background-color: black;
+  cursor:url('cursor.png'), default;
+}
+
+#background {
+  background: url(background.png);
+  position: fixed;
+  left: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  overflow: hidden;
+  opacity: 0.6;
+  filter: contrast(150%);
+}
+
+p {
+  position: absolute;
+  left: 32%;
+  margin-right: -32%;
+  width: 36vw;
+  white-space: nowrap;
+  overflow: hidden;
+  user-select: none;
+  animation: foot 4s steps(70, end);
+}
+
+span {
+  animation: blink 1s infinite;
+}
+
+marquee {
+  position: relative;
+  left: 22%;
+  margin-right: -22%;
+  width: 55%;
+  margin: auto;
+	border-left: 1vh solid white;
+  border-right: 1vh solid white;
+  user-select: none;
+	text-shadow: 0 0 1vh white;
+}
+
+#border-text {
+  position: relative;
+  top: 35vh;
+  left: 10vw;
+  width: 80vw;
+  height: 15vh;
+}
+
+#text {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  left: 10%;
+  vertical-align: middle;
+  background: url("text.gif") no-repeat center center;
+  background-size: contain;
+}
+
+.loader {
+  position: relative;
+  top: 10vh;
+  left: 10%;
+  margin-right: -10%;
+  width: 80%;
+  height: 30vh;
+  overflow: hidden;
+  animation: fadein 10s;
+}
+
+.loader span {
+  position: absolute;
+  display: block;
+}
+
+#footer {
+  background-color: black;
+  color: white;
+  position: absolute;
+	width: 100%;
+	height: 3em;
+	line-height: 1em;
+  bottom: 0;
+  box-shadow: 0vh 0vh 10vh #00078a;
+  text-shadow: #0004ff 0 0 3vh; /* #000b3b */
+}
+
+@keyframes foot { 
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+	100% {
+    opacity: 1;
+  }
+}
+
+.loader span:nth-child(1) {
+  background: linear-gradient(90deg, transparent, white);
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 3vh;
+  animation: transition1 1s linear infinite;
+  animation-delay: 0s;
+  box-shadow: 0vh 0vh 5vh #020659;
+}
+
+@keyframes transition1 {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+.loader span:nth-child(2) {
+  background: linear-gradient(180deg, transparent, white);
+  right: 0;
+  top: -100%;
+  width: 3vh;
+  height: 100%;
+  animation: transition2 1s linear infinite;
+  animation-delay: 0.5s;
+  box-shadow: 0vh 0vh 5vh #020659;
+}
+
+@keyframes transition2 {
+  0% {
+    top: -100%;
+  }
+  100% {
+    top: 100%;
+  }
+}
+
+.loader span:nth-child(3) {
+  background: linear-gradient(270deg, transparent, white);
+  bottom: 0;
+  left: -100%;
+  width: 100%;
+  height: 3vh;
+  animation: transition3 1s linear infinite;
+  animation-delay: 0s;
+  box-shadow: 0vh 0vh 5vh #020659;
+}
+
+@keyframes transition3 {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+.loader span:nth-child(4) {
+  background: linear-gradient(0deg, transparent, white);
+  left: 0;
+  top: 100%;
+  width: 3vh;
+  height: 100%;
+  animation: transition4 1s linear infinite;
+  animation-delay: 0.5s;
+  box-shadow: 0vh 0vh 5vh #020659;
+}
+
+@keyframes transition4 {
+  0% {
+    top: 100%;
+  }
+  100% {
+    top: -100%;
+  }
+}
+
+a {
+  color: white;
+  cursor:url('cursor.png'), default;
+}
+
+a:link, a:visited, a:active {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  font-weight: 800;
+}

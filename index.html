@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>AdriksGames</title>
+    <meta charset="utf-8"/>
+    <meta name="author" content="Adriks"/>
+    <meta name="description" content="It's my official website where I publish my games."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="icon.ico"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <div id="marquee"><marquee behavior="scroll" direction="right">💙 <a href="https://discord.gg/g5V8ZJp" target="_blank">Discord - LudziskaAdriks'a</a> 💙</marquee></div>
+    <div id="border-text">
+      <div id="text"></div>
+    </div>
+    <div class="loader">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div id="background"></div>
+    <div id="footer">
+			<p><a href="https://www.youtube.com/channel/UCUyUmVT8Rnzv4mYIyyfwN_w" target="_blank">Adrian Łepek(Adriks) &copy; All rights reserved!</a><span>|</span></p>
+    </div>
+    
+    <script>
+      window.addEventListener('keydown', function(event) {
+        if (event.ctrlKey && event.keyCode === 85 || event.keyCode === 123) { /* CTRL+U oraz F12 */
+          event.preventDefault();
+        }
+      });
+      window.addEventListener('contextmenu', function(event) {
+        event.preventDefault();
+      });
+    </script>
+  </body>
+</html>
